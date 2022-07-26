@@ -6,12 +6,13 @@
     "author": "LANDev <lancie@ch.tudelft.nl>",
     "private": true,
     "scripts": {
-        "build": "nuxt build",
-        "dev": "nuxt dev",
-        "generate": "nuxt generate",
-        "preview": "nuxt preview"
+        "dev": "nuxt dev --no-clear",
+        "build": "nuxt build --prerender",
+        "serve": "yarn build && nuxt preview",
+        "typecheck": "nuxt typecheck"
     },
     "devDependencies": {
-        "nuxt": "3.0.0-rc.6"
+        "nuxt": "3.0.0-rc.6",
+        "serve": "^14.0.1"
     }
 }

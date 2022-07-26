@@ -1,6 +1,25 @@
 version: "3"
 
 services:
+  server:
+    image: node:18.6
+    working_dir: /lan
+    command: ["sh", "-c", "yarn install && yarn dev"]
+    container_name: lan-server
+    restart: unless-stopped
+    ports:
+      - 3000:3000
+      - 24678:24678 # HMR Port
+    environment:
+      HOST: "0.0.0.0"
+    env_file:
+      - .env
+      - .env.local
+    depends_on:
+      - database
+      - mailcatcher
+    volumes:
+      - ./:/lan
   database:
     container_name: lan-database
     image: "postgres:latest"
