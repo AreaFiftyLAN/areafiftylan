@@ -8,4 +8,4 @@ ENV CHOKIDAR_USEPOLLING=true
 
 # Start the application in dev mode.
 EXPOSE 3000
-CMD yarn install && yarn dev
+CMD ["sh", "-c", "yarn install && yarn dev"]
