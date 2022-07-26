@@ -27,8 +27,8 @@ services:
     container_name: lan-database
     image: "postgres:latest"
     restart: unless-stopped
-    expose:
-      - 5432
+    ports:
+      - 5432:5432
     volumes:
       - ./dockerdata/postgres:/data/postgres
     environment:
@@ -40,10 +40,9 @@ services:
     container_name: lan-mailcatcher
     image: schickling/mailcatcher
     restart: unless-stopped
-    expose:
-      - 25:1025
     ports:
       - 8081:1080
+      - 1025:1025
     env_file:
       - .env
       - .env.local
