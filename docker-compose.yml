@@ -1,13 +1,59 @@
 version: "3"
 
 services:
-  nuxt:
+  server:
     build:
       context: .
       dockerfile: Dockerfile.dev
-    container_name: nuxt-server
+    container_name: lan-server
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - 3000:3000
+    env_file:
+      - .env
+      - .env.local
+    depends_on:
+      - database
+      - mailcatcher
     volumes:
-      - .:/lan
+      - ./package.json:/lan/package.json
+      - ./nuxt.config.ts:/lan/nuxt.config.ts
+      - ./tsconfig.json:/lan/tsconfig.json
+      - ./app.vue:/lan/app.vue
+  database:
+    container_name: lan-database
+    image: "postgres:latest"
+    restart: unless-stopped
+    expose:
+      - 5432
+    volumes:
+      - ./dockerdata/postgres:/data/postgres
+    environment:
+      PGDATA: "/data/postgres"
+    env_file:
+      - .env
+      - .env.local
+  mailcatcher:
+    container_name: lan-mailcatcher
+    image: schickling/mailcatcher
+    restart: unless-stopped
+    expose:
+      - 25:1025
+    ports:
+      - 8081:1080
+    env_file:
+      - .env
+      - .env.local
+  adminer:
+    container_name: lan-adminer
+    image: adminer
+    restart: unless-stopped
+    depends_on:
+      - database
+    ports:
+      - 8080:8080
+    environment:
+      ADMINER_DEFAULT_SERVER: database
+    env_file:
+      - .env
+      - .env.local
