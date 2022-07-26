@@ -1,0 +1,17 @@
+{
+    "name": "areafiftylan",
+    "version": "0.1.0",
+    "description": "Hulde voor de LANDev",
+    "repository": "git@github.com:AreaFiftyLAN/areafiftylan.git",
+    "author": "LANDev <lancie@ch.tudelft.nl>",
+    "private": true,
+    "scripts": {
+        "build": "nuxt build",
+        "dev": "nuxt dev",
+        "generate": "nuxt generate",
+        "preview": "nuxt preview"
+    },
+    "devDependencies": {
+        "nuxt": "3.0.0-rc.6"
+    }
+}
