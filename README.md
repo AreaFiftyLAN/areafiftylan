@@ -21,4 +21,4 @@ This exposes three services:
 
 If you add new files or folders to the root directory, and you want the application to access them, you will have to add a mount to the container.
 This can be done under `volumes` for the server service.
-Then restart the compose instance with `docker-compose restart`.
+Then restart the compose instance with `docker-compose down && docker-compose up -d --force-recreate`.
