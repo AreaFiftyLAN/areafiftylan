@@ -20,3 +20,6 @@ This exposes several services:
 -   An Adminer instance, to explore the database, accesible at [localhost:8080](http://localhost:8080).
 -   Mailcatcher SMTP server, at port 1025.
 -   Mailcatcher to view the outgoing email at [localhost:8081](http://localhost:8081).
+
+## Design
+The design can be found here: https://www.figma.com/file/1GiwLujABdQqFEfEoj43uY/Marit-Radder's-team-library?node-id=411%3A2
