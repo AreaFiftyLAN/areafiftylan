@@ -1,28 +1,6 @@
 version: "3"
 
 services:
-  server:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    container_name: lan-server
-    restart: unless-stopped
-    ports:
-      - 3000:3000
-    env_file:
-      - .env
-      - .env.local
-    depends_on:
-      - database
-      - mailcatcher
-    volumes:
-      # Files
-      - ./package.json:/lan/package.json
-      - ./nuxt.config.ts:/lan/nuxt.config.ts
-      - ./tsconfig.json:/lan/tsconfig.json
-      - ./app.vue:/lan/app.vue
-      # Folders
-      - ./public:/lan/public
   database:
     container_name: lan-database
     image: "postgres:latest"
