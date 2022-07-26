@@ -1,0 +1,14 @@
+# This Dockerfile requires you to mount the root of the repository to /lan!
+FROM node:18.6
+WORKDIR /lan
+
+# Make sure the dependencies are up to date.
+RUN yarn install
+
+# Set env variables required.
+ENV HOST 0.0.0.0
+ENV CHOKIDAR_USEPOLLING=true
+
+# Start the application in dev mode.
+EXPOSE 3000
+CMD npm run dev
