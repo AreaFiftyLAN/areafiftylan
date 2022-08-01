@@ -22,4 +22,4 @@ This exposes several services:
 -   Mailcatcher to view the outgoing email at [localhost:8081](http://localhost:8081).
 
 ## Design
-The design can be found here: https://www.figma.com/file/1GiwLujABdQqFEfEoj43uY/Marit-Radder's-team-library?node-id=411%3A2
+The design can be found here: https://www.figma.com/file/1GiwLujABdQqFEfEoj43uY/Marit-Radder's-team-library?node-id=411%3A2 Which this link you can view only. If you also want to apply changes ask Marit for permission. 
