@@ -6,16 +6,25 @@
 
 <style lang="scss" scoped>
 button {
-    width: 10rem;
-    height: 3rem;
-    border-radius: 10px;
-    background: #000;
-    color: #fff;
-    padding: 1rem;
-    margin: 1rem auto;
+ 
+    border-radius: 5px;
+    background: var(--theme-color);
+    color: var(--theme-color-alt);
+    font-size: var(--font-size-l);
+    line-height: var(--line-height-l);
+    border: none;
+    padding: var(--indent-s);
+    min-width: 23rem;
+
 
     &:hover {
         cursor: pointer;
+    }
+}
+
+.title__container {
+    button {
+        margin-top: var(--indent-xl);
     }
 }
 </style>

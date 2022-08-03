@@ -12,6 +12,8 @@
         "typecheck": "nuxt typecheck"
     },
     "devDependencies": {
+        "@vueuse/core": "^9.0.2",
+        "@vueuse/nuxt": "^9.0.2",
         "nuxt": "3.0.0-rc.6",
         "sass": "^1.54.0",
         "serve": "^14.0.1"
