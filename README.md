@@ -21,5 +21,20 @@ This exposes several services:
 -   Mailcatcher SMTP server, at port 1025.
 -   Mailcatcher to view the outgoing email at [localhost:8081](http://localhost:8081).
 
+For installing the dependencies run:
+
+```bash
+yarn
+```
+
+For starting the server run: 
+
+```bash
+yarn dev
+```
+
+
+
+
 ## Design
 The design can be found here: https://www.figma.com/file/1GiwLujABdQqFEfEoj43uY/Marit-Radder's-team-library?node-id=411%3A2 Which this link you can view only. If you also want to apply changes ask Marit for permission. 

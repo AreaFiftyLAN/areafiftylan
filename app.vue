@@ -1,5 +1,5 @@
-<style lang="postcss">
-    @import 'public/index.pcss';
+<style lang="scss">
+    @import 'public/index.scss';
 </style>
 
 <template>

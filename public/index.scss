@@ -1,8 +1,9 @@
-@import "Styles/header.pcss";
-@import "Styles/introImage.pcss";
-
 html {
     scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
 }
 
 a, a:hover, a:focus, a:active {
