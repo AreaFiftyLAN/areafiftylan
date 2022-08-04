@@ -1,13 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
+    html { font-size: 62.5%; } 
+
     --theme-color: #1a2b43;
     --theme-color-alt: #ffe574;
 
-    --indent-s: 0.8rem;
-    --indent-m: 1.6rem;
-    --indent-l: 2.4rem;
-    --indent-xl: 4.8rem;
+    --indent-s: 8px;
+    --indent-m: 16px;
+    --indent-l: 24px;
+    --indent-xl: 48px;
     
 
     --font-size-s: 1.4rem;

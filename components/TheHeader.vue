@@ -13,6 +13,7 @@
     img {
         z-index: 2;
         height: 40px;
+        padding:0 var(--indent-s);
     }
 
     nav {
@@ -20,12 +21,14 @@
         justify-content: space-between;
         align-items: center;
         color: var(--theme-color-alt);
-        padding: var(--indent-s);
+        padding: var(--indent-m) 0;
         z-index: 2;
+        position: absolute;
+        width: 100%;
     }
 
     a {
-        padding: var(--indent-s);
+        padding: 0 var(--indent-m);
         z-index: 2;
 
         &:hover {

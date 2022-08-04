@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="container">
         <div class="introImage__container">
             <img class="introImage__image" src="/Images/Gamers.jpg"/>
         </div>
@@ -12,13 +12,18 @@
 </template>
 
 <style lang="scss" scoped>
+
+    .container {
+        position: relative;
+    }
+
     .introImage__image {    
        object-fit: cover;
        width: 100%;
     }
 
     .introImage__container {
-        position: absolute;
+        // position: absolute;
         top: 0;
         width: 100%;
         max-height: 50rem;
@@ -26,13 +31,15 @@
     }
 
     .title__container {
-        position: absolute;
+        // position: absolute;
         height: 70%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        position: absolute;
+        top: 0;
     }
     .introImage__title {
         height: 11rem;
