@@ -1,5 +1,14 @@
+<script>
+export default {
+  props: {
+    inverse: Boolean,
+    size: String
+  }
+}
+</script>
+
 <template>
-    <button>
+    <button :class="[{'inverse': inverse}, size]">
         <slot />
     </button>
 </template>
@@ -20,6 +29,18 @@ button {
     &:hover {
         cursor: pointer;
     }
+}
+
+.inverse {
+    background: var(--theme-color-alt);
+    color: var(--theme-alt);
+}
+
+.small {
+    font-size: var(--font-size-s);
+    line-height: var(--line-height-m);
+    padding: var(--indent-s) var(--indent-m);
+    min-width: unset;
 }
 
 .title__container {

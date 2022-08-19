@@ -20,6 +20,7 @@
     .introImage__image {    
        object-fit: cover;
        width: 100%;
+       filter: contrast(0.55);
     }
 
     .introImage__container {
