@@ -14,5 +14,23 @@
 
     <LinkButton size="small" :inverse="true">Buy Ticket</LinkButton>
   </TextImage>
-  <TextImage image="/Images/Gamers.jpg" :inverse="false"></TextImage>
+  <SponsorBanner :sponsors="sponsors"></SponsorBanner>
+  <TextImage image="/Images/Gamers.jpg" :inverse="false">
+    <h2>FAQ</h2>
+    <QuestionAnswer question="When will the event take place?">The event will take place from Friday the 27th of May till Sunday 
+the 29th of May. Further details will be made available at a later date.</QuestionAnswer>
+<QuestionAnswer question="When will the event take place?">The event will take place from Friday the 27th of May till Sunday 
+the 29th of May. Further details will be made available at a later date.</QuestionAnswer>
+<QuestionAnswer question="When will the event take place?">The event will take place from Friday the 27th of May till Sunday 
+the 29th of May. Further details will be made available at a later date.</QuestionAnswer>
+<QuestionAnswer question="When will the event take place?">The event will take place from Friday the 27th of May till Sunday 
+the 29th of May. Further details will be made available at a later date.</QuestionAnswer>
+<QuestionAnswer question="When will the event take place?">The event will take place from Friday the 27th of May till Sunday 
+the 29th of May. Further details will be made available at a later date.</QuestionAnswer>
+  </TextImage>
 </template>
+
+<script setup lang="ts">
+  const sponsors = [{title: 'Presented by', sponsors: ["/Images/logo.png", "/Images/logo.png"]}, {title: 'Sponsored by', sponsors: ["/Images/logo.png", "/Images/logo.png"]}]
+</script>
+

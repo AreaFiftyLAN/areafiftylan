@@ -25,11 +25,13 @@
         z-index: 2;
         position: absolute;
         width: 100%;
+        transition: background-color 0.5s;
     }
 
     a {
         padding: 0 var(--indent-m);
         z-index: 2;
+        font-size: var(--font-size-m);
 
         &:hover {
             text-decoration: underline;
@@ -40,7 +42,6 @@
         background-color: var(--theme-color);
         position: sticky;
         top: 0;
-        transition: background-color 0.5s;
     }
 
     div {

@@ -35,6 +35,7 @@ export default {
 
     img {
         max-width: 66%;
+        object-fit: cover;
     }
 
 

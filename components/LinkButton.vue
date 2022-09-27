@@ -1,7 +1,7 @@
 <script>
 export default {
   props: {
-    inverse: Boolean,
+    inverse: Array,
     size: String
   }
 }
