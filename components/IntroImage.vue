@@ -5,7 +5,7 @@
         </div>
         <div class="title__container">
             <img class="introImage__title" src="/Images/Area51Lan Yellow.png" />
-            <h2>26, 27 and 28 Feburary 2022</h2>
+            <h2>26, 27 and 28 February 2022</h2>
             <LinkButton>Get Tickets</LinkButton>
         </div>
     </div>
@@ -17,7 +17,7 @@
         position: relative;
     }
 
-    .introImage__image {    
+    .introImage__image {
        object-fit: cover;
        width: 100%;
        filter: contrast(0.55);
