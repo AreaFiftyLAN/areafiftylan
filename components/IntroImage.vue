@@ -1,10 +1,10 @@
 <template>
     <div class="container">
         <div class="introImage__container">
-            <img class="introImage__image" src="/Images/Gamers.jpg"/>
+            <NuxtImg class="introImage__image" src="/images/gamers.jpg"/>
         </div>
         <div class="title__container">
-            <img class="introImage__title" src="/Images/Area51Lan Yellow.png" />
+            <NuxtImg class="introImage__title" src="/images/logo.png" />
             <h2>26, 27 and 28 February 2022</h2>
             <LinkButton>Get Tickets</LinkButton>
         </div>

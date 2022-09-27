@@ -1,6 +1,7 @@
 <template>
+<div>
   <IntroImage></IntroImage>
-  <TextImage image="/Images/Gamers.jpg" :inverse="true">
+  <TextImage image="/images/gamers.jpg" :inverse="true">
     <h2>What is included in your ticket?</h2>
     <p>
       Buying a ticket will get you the following perks: <br> <br>Admission to the event
@@ -14,5 +15,6 @@
 
     <LinkButton size="small" :inverse="true">Buy Ticket</LinkButton>
   </TextImage>
-  <TextImage image="/Images/Gamers.jpg" :inverse="false"></TextImage>
+  <TextImage image="/images/gamers.jpg" :inverse="false"></TextImage>
+</div>
 </template>

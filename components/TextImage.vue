@@ -13,7 +13,7 @@ export default {
         <slot/>
     </div>
 
-    <img :src="image"/>
+    <NuxtImg :src="image"/>
 </div>
 </template>
 

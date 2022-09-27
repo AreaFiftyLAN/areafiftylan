@@ -1,13 +1,9 @@
-import { defineNuxtConfig } from "nuxt";
-
-// https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    modules: [
-        '@vueuse/nuxt',
-      ],
+    modules: ["@vueuse/nuxt", "@nuxt/image-edge"],
     typescript: {
         strict: true,
     },
+    image: {},
     vite: {
         server: {
             hmr: {

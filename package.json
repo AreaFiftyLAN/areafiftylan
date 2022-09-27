@@ -12,6 +12,7 @@
         "typecheck": "nuxt typecheck"
     },
     "devDependencies": {
+        "@nuxt/image-edge": "^1.0.0-27719579.87dcdf2",
         "@vueuse/core": "^9.3.0",
         "@vueuse/nuxt": "^9.3.0",
         "nuxt": "3.0.0-rc.11",
