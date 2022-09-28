@@ -44,6 +44,8 @@ jobs:
           LINTER_RULES_PATH: "/"
           EDITORCONFIG_FILE_NAME: ".editorconfig"
           YAML_ERROR_ON_WARNING: true
+          TYPESCRIPT_DEFAULT_STYLE: prettier
+          JAVASCRIPT_DEFAULT_STYLE: prettier
   prettier:
     name: Validate Prettier
     runs-on: ubuntu-latest
