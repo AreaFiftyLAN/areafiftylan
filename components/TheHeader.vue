@@ -9,6 +9,10 @@
     </nav>
 </template>
 
+<script lang="ts" setup>
+const { y } = useWindowScroll();
+</script>
+
 <style lang="scss" scoped>
 img {
     z-index: 2;
@@ -47,7 +51,3 @@ div {
     z-index: 2;
 }
 </style>
-
-<script lang="ts" setup>
-const { x, y } = useWindowScroll();
-</script>
