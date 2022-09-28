@@ -20,7 +20,6 @@
     --indent-l: 24px;
     --indent-xl: 48px;
 
-
     --font-size-s: 1.4rem;
     --font-size-m: 1.6rem;
     --font-size-l: 2.0rem;
@@ -46,8 +45,8 @@ body {
 }
 
 a, a:hover, a:focus, a:active {
-      text-decoration: none;
-      color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 h2 {
