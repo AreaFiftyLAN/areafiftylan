@@ -36,3 +36,17 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           YAML_ERROR_ON_WARNING: true
+  prettier:
+    name: Validate Prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+          persist-credentials: false
+      - uses: creyD/prettier_action@v4.2
+        with:
+          dry: True
+          prettier_options: "--check ."
+          github_token: ${{ secrets.GITHUB_TOKEN }}
