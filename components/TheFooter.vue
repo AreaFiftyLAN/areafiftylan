@@ -20,7 +20,9 @@
                     rights reserved.
                 </p>
             </div>
-            <div class="socialmedia"><p>Follow us</p></div>
+            <div class="socialmedia">
+                <p>Follow us</p>
+            </div>
         </div>
     </div>
 </template>
