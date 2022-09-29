@@ -1,12 +1,3 @@
-<script>
-export default {
-    props: {
-        inverse: Boolean,
-        image: String,
-    },
-};
-</script>
-
 <template>
     <div class="container" :class="{ inverse: inverse }">
         <div class="content">
@@ -16,6 +7,15 @@ export default {
         <NuxtImg :src="image" />
     </div>
 </template>
+
+<script setup lang="ts">
+interface Props {
+    inverse?: boolean;
+    image: string;
+}
+
+defineProps<Props>();
+</script>
 
 <style lang="scss" scoped>
 .container {
