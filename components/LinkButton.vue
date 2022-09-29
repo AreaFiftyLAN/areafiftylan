@@ -1,21 +1,20 @@
-<script>
-export default {
-  props: {
-    inverse: Boolean,
-    size: String
-  }
-}
-</script>
-
 <template>
-    <button :class="[{'inverse': inverse}, size]">
+    <button :class="[{ inverse: inverse }, size]">
         <slot />
     </button>
 </template>
 
+<script setup lang="ts">
+interface Props {
+    inverse?: boolean;
+    size?: "small";
+}
+
+defineProps<Props>();
+</script>
+
 <style lang="scss" scoped>
 button {
- 
     border-radius: 5px;
     background: var(--theme-color);
     color: var(--theme-color-alt);
@@ -24,7 +23,6 @@ button {
     border: none;
     padding: var(--indent-s);
     min-width: 23rem;
-
 
     &:hover {
         cursor: pointer;
