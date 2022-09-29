@@ -2,12 +2,13 @@
     "root": true,
     "extends": [
         "eslint:recommended",
+        "plugin:json/recommended",
         "plugin:vue/vue3-recommended",
         "plugin:@typescript-eslint/recommended",
         "@nuxtjs/eslint-config-typescript",
         "plugin:prettier/recommended"
     ],
-    "plugins": ["nuxt", "@typescript-eslint"],
+    "plugins": ["json", "nuxt", "@typescript-eslint"],
     "parser": "vue-eslint-parser",
     "parserOptions": {
         "ecmaVersion": "latest",
