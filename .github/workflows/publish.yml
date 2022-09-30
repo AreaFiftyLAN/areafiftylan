@@ -1,3 +1,4 @@
+---
 name: Docker Publish
 on:
   push:
@@ -5,6 +6,7 @@ on:
       - main
   schedule:
     - cron: "40 2 2 * *"
+
 jobs:
   buildDockerImage:
     name: Build Docker image

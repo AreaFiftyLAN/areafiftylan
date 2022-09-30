@@ -34,4 +34,4 @@ COPY --from=builder /usr/src/app/.output ./.output
 ENV HOST 0.0.0.0
 ENV PORT 80
 EXPOSE 80
-CMD node .output/server/index.mjs
+CMD ["node", ".output/server/index.mjs"]
