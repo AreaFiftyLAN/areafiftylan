@@ -7,7 +7,7 @@
     "private": true,
     "scripts": {
         "dev": "nuxt dev --no-clear",
-        "build": "nuxt build --prerender",
+        "build": "nuxt build",
         "serve": "yarn build && nuxt preview",
         "typecheck": "nuxt typecheck",
         "lint": "eslint . --ext .ts,.js,.vue,.json --max-warnings 0"
