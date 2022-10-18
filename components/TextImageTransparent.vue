@@ -63,7 +63,6 @@ a {
     }
 }
 
-
 .buttons {
     display: flex;
     margin: 1rem 0;
