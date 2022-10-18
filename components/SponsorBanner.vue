@@ -3,11 +3,7 @@
         <div v-for="s in sponsors" :key="s.title" class="container">
             <h2 class="sponsor_category_title">{{ s.title }}</h2>
             <div class="images_container">
-                <div
-                    v-for="im in s.sponsors"
-                    :key="im.id"
-                    class="image_container"
-                >
+                <div v-for="im in s.sponsors" :key="im" class="image_container">
                     <img :src="im" />
                 </div>
             </div>

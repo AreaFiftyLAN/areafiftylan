@@ -6,7 +6,7 @@
         <div class="title__container">
             <NuxtImg class="introImage__title" src="/images/logo.png" />
             <h2>26, 27 and 28 February 2022</h2>
-            <LinkButton>Get Tickets</LinkButton>
+            <LinkButton size="medium">Get Tickets</LinkButton>
         </div>
     </div>
 </template>
