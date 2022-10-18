@@ -1,6 +1,6 @@
 <template>
     <div class="login">
-        <TextIamgeTransparent image="/images/gamers.jpg"></TextIamgeTransparent>
+        <TextImageTransparent image="/images/gamers.jpg"></TextImageTransparent>
     </div>
 </template>
 
