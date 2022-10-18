@@ -28,29 +28,25 @@
 </template>
 
 <style lang="scss" scoped>
+.container {
+    padding: var(--indent-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--color-white);
 
-    .container {
-        padding: var(--indent-m);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: var(--color-white);
-        
-        p {
-            color: black;
-        }
+    p {
+        color: black;
     }
+}
 
-    .copyright-socialmedia-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        
-        p {
-            color: black;
-        }
+.copyright-socialmedia-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        color: black;
     }
-
-
-
+}
 </style>

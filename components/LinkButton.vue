@@ -1,18 +1,17 @@
-<script>
-export default {
-  props: {
-    inverse: Array,
-    size: String
-  }
-}
-</script>
-
-
 <template>
     <button :class="[{ inverse: inverse }, size]">
         <slot />
     </button>
 </template>
+
+<script setup lang="ts">
+interface Props {
+    inverse?: boolean;
+    size: string;
+}
+
+defineProps<Props>();
+</script>
 
 <style lang="scss" scoped>
 button {
