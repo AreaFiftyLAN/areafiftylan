@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <a class="question" @click="() => (isActive = !isActive)">
+        <a class="question" @click="toggleActive">
             {{ question }}
         </a>
         <p class="answer" :class="{ active: isActive }">
@@ -17,6 +17,10 @@ interface Props {
 defineProps<Props>();
 
 const isActive = ref(false);
+
+const toggleActive = () => {
+    isActive.value = !isActive.value;
+};
 </script>
 
 <style lang="scss" scoped>
