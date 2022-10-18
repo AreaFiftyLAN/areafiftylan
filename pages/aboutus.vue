@@ -1,7 +1,7 @@
 <template>
     <div>
         <TextImage image="/Images/Gamers.jpg" :inverse="false">
-            <h2>Who are we?</h2>
+            <h1 style="padding-top: 48px">Who are we?</h1>
             <p>
                 The LANcie is the committee that organises AreaFiftyLAN each
                 year. It's our job to make sure everything goes to plan and that
@@ -15,7 +15,9 @@
                 Logi is de beste positie.
             </p>
         </TextImage>
-        <SponsorBanner :sponsors="sponsors"></SponsorBanner>
+        <SponsorBanner :sponsors="sponsors">
+            <p>PLACEHOLDER</p>
+        </SponsorBanner>
     </div>
 </template>
 

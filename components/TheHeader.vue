@@ -1,6 +1,8 @@
 <template>
     <nav class="header" :class="{ sticky: y > 0 }">
-        <NuxtImg class="header__img" src="/images/logo.png" />
+        <a class="header__link" href="/">
+            <NuxtImg class="header__img" src="/images/logo.png" />
+        </a>
         <div class="header__link">
             <a class="header__link" href="#">Tickets</a>
             <a class="header__link" href="/aboutus">About us</a>

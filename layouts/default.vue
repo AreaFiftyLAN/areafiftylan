@@ -24,6 +24,7 @@
     --font-size-m: 1.6rem;
     --font-size-l: 2.0rem;
     --font-size-xl: 3.2rem;
+    --font-size-xxl: 4.0rem;
 
     --line-height-s: 1.8rem;
     --line-height-m: 2rem
@@ -48,6 +49,14 @@ body {
 a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+h1 {
+    color: var(--theme-color-alt);
+    font-size: var(--font-size-xxl);
+    line-height: var(--line-height-xl);
+    font-weight: 700;
+    margin-top: 0;
 }
 
 h2 {
