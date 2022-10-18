@@ -4,7 +4,13 @@
         <div class="content">
             <h1>Login</h1>
             <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
+            <input type="password" placeholder="Password" /><br />
+            <a class="link" href="https://google.com">Reset Password</a>
+
+            <div class="buttons">
+                <button class="button">Login</button>
+                <button class="button">Register</button>
+            </div>
         </div>
     </div>
 </template>
@@ -47,5 +53,34 @@ defineProps<Props>();
     position: relative;
     text-align: left;
     color: white;
+}
+
+.link {
+    color: var(--theme-color-alt);
+    text-decoration: underline;
+}
+.link:hover {
+    color: var(--theme-color);
+}
+
+.buttons {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.button {
+    all: none;
+    margin: 0 0.5rem;
+    width: 7rem;
+}
+
+.button:nth-child(even) {
+    background-color: var(--theme-color);
+    color: var(--theme-color-alt);
+}
+
+.button:nth-child(odd) {
+    background-color: var(--theme-color-alt);
+    color: var(--theme-color);
 }
 </style>
