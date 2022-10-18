@@ -3,7 +3,7 @@
         <NuxtImg class="header__img" src="/images/logo.png" />
         <div class="header__link">
             <a class="header__link" href="#">Tickets</a>
-            <a class="header__link" href="#">About us</a>
+            <a class="header__link" href="/aboutus">About us</a>
             <a class="header__link" href="#">My Area</a>
         </div>
     </nav>
