@@ -1,5 +1,7 @@
 <template>
   <IntroImage></IntroImage>
+  <TournamentComponent title="Official Tournaments" :tournaments="games"></TournamentComponent>
+
   <TextImage image="/Images/Gamers.jpg" :inverse="true">
     <h2>What is included in your ticket?</h2>
     <p>
@@ -32,5 +34,7 @@ the 29th of May. Further details will be made available at a later date.</Questi
 
 <script setup lang="ts">
   const sponsors = [{title: 'Presented by', sponsors: ["/Images/logo.png", "/Images/logo.png"]}, {title: 'Sponsored by', sponsors: ["/Images/logo.png", "/Images/logo.png"]}]
+  const games = [{gameImage: "/Images/Minecraft.jpg", game: "Minecraft", form: "3V3", logo: "/Images/logo.png", prize: "goodie bag"}]
+
 </script>
 
