@@ -1,6 +1,6 @@
 # AreaFiftyLAN
 
-This website is still under construction. This is not in use yet :(.
+This site is still under construction. This is not in use yet :(.
 
 ## Development
 
@@ -27,14 +27,14 @@ For installing the dependencies run:
 yarn
 ```
 
-For starting the server run: 
+For starting the server run:
 
 ```bash
 yarn dev
 ```
 
-
-
-
 ## Design
-The design can be found here: https://www.figma.com/file/1GiwLujABdQqFEfEoj43uY/Marit-Radder's-team-library?node-id=411%3A2 Which this link you can view only. If you also want to apply changes ask Marit for permission. 
+
+The design can be found [here](https://www.figma.com/file/1GiwLujABdQqFEfEoj43uY/Marit-Radder's-team-library).
+With this link you can only view the design.
+If you also want to apply changes ask Marit for permission.

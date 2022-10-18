@@ -1,10 +1,12 @@
+---
 name: Docker Publish
 on:
   push:
-    paths:
-      - "Dockerfile.dev"
     branches:
       - main
+  schedule:
+    - cron: "40 2 2 * *"
+
 jobs:
   buildDockerImage:
     name: Build Docker image
@@ -24,7 +26,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v3
         with:
-          images: ghcr.io/AreaFiftyLAN/lan-dev
+          images: ghcr.io/AreaFiftyLAN/areafiftylan
           tags: |
             type=sha, prefix={{date 'X'}}-
             latest
@@ -33,5 +35,4 @@ jobs:
         with:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          file: Dockerfile.dev
           push: true
