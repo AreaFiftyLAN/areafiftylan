@@ -6,7 +6,7 @@
             :tournaments="games"
         ></TournamentComponent>
 
-        <TextImage image="/Images/Gamers.jpg" :inverse="true">
+        <TextImage image="/images/gamers.jpg" :inverse="true">
             <h2>What is included in your ticket?</h2>
             <p>
                 Buying a ticket will get you the following perks: <br />
@@ -22,7 +22,7 @@
             <LinkButton size="small" :inverse="true">Buy Ticket</LinkButton>
         </TextImage>
         <SponsorBanner :sponsors="sponsors"></SponsorBanner>
-        <TextImage image="/Images/Gamers.jpg" :inverse="false">
+        <TextImage image="/images/gamers.jpg" :inverse="false">
             <h2>FAQ</h2>
             <QuestionAnswer question="When will the event take place?"
                 >The event will take place from Friday the 27th of May till
