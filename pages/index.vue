@@ -33,7 +33,7 @@ the 29th of May. Further details will be made available at a later date.</Questi
 </template>
 
 <script setup lang="ts">
-  const sponsors = [{title: 'Presented by', sponsors: ["/Images/logo.png", "/Images/logo.png"]}, {title: 'Sponsored by', sponsors: ["/Images/logo.png", "/Images/logo.png"]}]
+  const sponsors = [{title: 'Presented by', sponsors: ["/Images/chlogo.png", "/Images/chlogo.png"]}, {title: 'Sponsored by', sponsors: ["/Images/chlogo.png", "/Images/chlogo.png"]}]
   const games = [{gameImage: "/Images/Minecraft.jpg", game: "Minecraft", form: "3V3", logo: "/Images/logo.png", prize: "goodie bag"}]
 
 </script>

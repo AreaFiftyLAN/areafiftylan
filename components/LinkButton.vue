@@ -14,15 +14,6 @@ export default {
     </button>
 </template>
 
-<script setup lang="ts">
-interface Props {
-    inverse?: boolean;
-    size?: "small";
-}
-
-defineProps<Props>();
-</script>
-
 <style lang="scss" scoped>
 button {
     border-radius: 5px;
