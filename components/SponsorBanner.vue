@@ -55,10 +55,4 @@ defineProps<Props>();
 img {
     width: 100%;
 }
-idth: 22%;
-  }
-
-  img {
-    width: 100%;
-  }
 </style>
