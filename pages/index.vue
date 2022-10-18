@@ -6,7 +6,7 @@
             :tournaments="games"
         ></TournamentComponent>
 
-        <TextImage image="/Images/Gamers.jpg" :inverse="true">
+        <TextImage image="/images/gamers.jpg" :inverse="true">
             <h2>What is included in your ticket?</h2>
             <p>
                 Buying a ticket will get you the following perks: <br />
@@ -22,32 +22,28 @@
             <LinkButton size="small" :inverse="true">Buy Ticket</LinkButton>
         </TextImage>
         <SponsorBanner :sponsors="sponsors"></SponsorBanner>
-        <TextImage image="/Images/Gamers.jpg" :inverse="false">
+        <TextImage image="/images/gamers.jpg" :inverse="false">
             <h2>FAQ</h2>
             <QuestionAnswer question="When will the event take place?"
                 >The event will take place from Friday the 27th of May till
                 Sunday the 29th of May. Further details will be made available
                 at a later date.</QuestionAnswer
             >
-            <QuestionAnswer question="When will the event take place?"
-                >The event will take place from Friday the 27th of May till
-                Sunday the 29th of May. Further details will be made available
-                at a later date.</QuestionAnswer
+            <QuestionAnswer question="When will the linter shut up?"
+                >It will shut up when I remove this lorum ipsum
+                stuff</QuestionAnswer
             >
-            <QuestionAnswer question="When will the event take place?"
-                >The event will take place from Friday the 27th of May till
-                Sunday the 29th of May. Further details will be made available
-                at a later date.</QuestionAnswer
+            <QuestionAnswer question="When will Dany be happy?"
+                >Dany is always busy so I dont know if he will be
+                happy</QuestionAnswer
             >
-            <QuestionAnswer question="When will the event take place?"
-                >The event will take place from Friday the 27th of May till
-                Sunday the 29th of May. Further details will be made available
-                at a later date.</QuestionAnswer
+            <QuestionAnswer question="When will Marit go crazy?"
+                >When this linter will not shut up, also I am conviced she
+                already is.</QuestionAnswer
             >
-            <QuestionAnswer question="When will the event take place?"
-                >The event will take place from Friday the 27th of May till
-                Sunday the 29th of May. Further details will be made available
-                at a later date.</QuestionAnswer
+            <QuestionAnswer
+                question="When will Marit stop making spelling mistakes?"
+                >Never.</QuestionAnswer
             >
         </TextImage>
     </div>
