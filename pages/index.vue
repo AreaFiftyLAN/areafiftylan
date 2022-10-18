@@ -57,19 +57,19 @@
 const sponsors = [
     {
         title: "Presented by",
-        sponsors: ["/Images/chlogo.png", "/Images/chlogo.png"],
+        sponsors: ["/images/chlogo.png", "/images/chlogo.png"],
     },
     {
         title: "Sponsored by",
-        sponsors: ["/Images/chlogo.png", "/Images/chlogo.png"],
+        sponsors: ["/images/chlogo.png", "/images/chlogo.png"],
     },
 ];
 const games = [
     {
-        gameImage: "/Images/Minecraft.jpg",
+        gameImage: "/images/minecraft.jpg",
         game: "Minecraft",
         form: "3V3",
-        logo: "/Images/logo.png",
+        logo: "/images/logo.png",
         prize: "goodie bag",
     },
 ];
