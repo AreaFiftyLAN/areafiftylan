@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 :root {
-   
     --theme-color: #1a2b43;
     --theme-color-alt: #ffe574;
     --color-white: #fff;
@@ -10,7 +9,7 @@
     --indent-m: 16px;
     --indent-l: 24px;
     --indent-xl: 48px;
-    
+
 
     --font-size-s: 1.4rem;
     --font-size-m: 1.6rem;
@@ -18,7 +17,7 @@
     --font-size-xl: 3.2rem;
 
     --line-height-s: 1.8rem;
-    --line-height-m: 2rem
+    --line-height-m: 2rem;
     --line-height-l: 2.4rem;
     --line-height-xl: 3.9rem;
 
@@ -26,7 +25,6 @@
     --text-color-alt: #000;
 
     font-size: 62.5%;
-
 }
 
 html {
@@ -39,7 +37,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-a, a:hover, a:focus, a:active {
+a, 
+a:hover,
+a:focus, 
+a:active {
       text-decoration: none;
       color: inherit;
 }
