@@ -7,7 +7,7 @@
 <script setup lang="ts">
 interface Props {
     inverse?: boolean;
-    size?: "small";
+    size: string;
 }
 
 defineProps<Props>();

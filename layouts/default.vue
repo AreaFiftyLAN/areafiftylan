@@ -7,13 +7,12 @@
 </template>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
 :root {
-    html { font-size: 62.5%; }
-
     --theme-color: #1a2b43;
     --theme-color-alt: #ffe574;
+    --color-white: #fff;
 
     --indent-s: 8px;
     --indent-m: 16px;
@@ -22,29 +21,35 @@
 
     --font-size-s: 1.4rem;
     --font-size-m: 1.6rem;
-    --font-size-l: 2.0rem;
+    --font-size-l: 2rem;
     --font-size-xl: 3.2rem;
 
     --line-height-s: 1.8rem;
-    --line-height-m: 2rem
+    --line-height-m: 2rem;
     --line-height-l: 2.4rem;
     --line-height-xl: 3.9rem;
 
     --text-color: #fff;
     --text-color-alt: #000;
 
+    font-size: 62.5%;
 }
 
 html {
     scroll-behavior: smooth;
+    background-color: var(--theme-color);
+    font-size: 62.5%;
 }
 
 body {
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
     color: inherit;
 }
@@ -59,7 +64,7 @@ h2 {
 
 p {
     color: var(--text-color);
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-m);
     line-height: var(--line-height-m);
 }
 </style>
