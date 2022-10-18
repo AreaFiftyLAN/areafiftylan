@@ -1,5 +1,6 @@
 {
     "root": true,
+    "ignorePatterns": ["dist/**", ".output/**", ".nuxt/**"],
     "extends": [
         "eslint:recommended",
         "plugin:json/recommended",
