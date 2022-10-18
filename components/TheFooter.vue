@@ -16,8 +16,8 @@
         <div class="copyright-socialmedia-container">
             <div class="copyright">
                 <p>
-                    Copyright © 2015-2022 by W.I.S.V. ‘Christiaan Huygens’. All
-                    rights reserved.
+                    Copyright © 2015-{{ new Date().getFullYear() }} by W.I.S.V.
+                    ‘Christiaan Huygens’. All rights reserved.
                 </p>
             </div>
             <div class="socialmedia">
