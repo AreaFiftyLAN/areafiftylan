@@ -4,11 +4,4 @@
     </div>
 </template>
 
-<script>
-import TextImageTransparent from "../components/TextIamgeTransparent.vue"
-    export default {
-      components: {
-        TextImageTransparent,
-      }
-    }
-</script>
+<script setup lang="ts"></script>
