@@ -1,8 +1,6 @@
 <template>
     <div>
         <h2 class="image_scroller_title">{{ title }}</h2>
-        <!-- container for images, with first 2 items appended for
-        seemless infinite scroll transition -->
         <div class="container">
             <div v-for="i in images" :key="i" class="image_container">
                 <NuxtImg :src="i" />
