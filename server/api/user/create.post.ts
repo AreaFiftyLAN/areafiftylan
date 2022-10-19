@@ -1,5 +1,5 @@
 import { PrismaClient, User } from "@prisma/client";
-import { object, string, define, assert, size } from "superstruct";
+import { object, string, define, assert, size, StructError } from "superstruct";
 
 import isEmail from "is-email";
 
@@ -12,7 +12,19 @@ const Body = object({
 
 export default defineEventHandler<User>(async (e) => {
     const body = await readBody(e);
-    assert(body, Body);
+
+    try {
+        assert(body, Body);
+    } catch (e) {
+        throw createError({
+            statusCode: 400,
+            statusMessage: "Bad Request",
+            message: (e as StructError)?.message,
+            cause: e,
+            fatal: false,
+            stack: undefined,
+        });
+    }
 
     const prisma = new PrismaClient();
 
