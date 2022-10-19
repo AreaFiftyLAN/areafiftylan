@@ -1,6 +1,8 @@
 <template>
     <div>
         <h2 class="image_scroller_title">{{ title }}</h2>
+        <!-- container for images, with first 2 items appended for
+        seemless infinite scroll transition -->
         <div class="container">
             <div v-for="i in images" :key="i" class="image_container">
                 <NuxtImg :src="i" />
@@ -30,6 +32,7 @@ defineProps<Props>();
     --end-translate: 0;
 }
 
+//how much scroll, should scale with # of images, 100% is width of 1 image
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -49,12 +52,12 @@ defineProps<Props>();
     z-index: 2;
 }
 .container .image_container {
-    animation: scroll 35s linear infinite;
+    animation: scroll 35s linear infinite; //animation time, should scale with # of images
     counter-increment: c 1;
 }
-.container:hover .image_container {
-    animation-play-state: paused;
-}
+// .container:hover .image_container {
+//     animation-play-state: paused;
+// }
 
 ::-webkit-scrollbar {
     height: 0;
