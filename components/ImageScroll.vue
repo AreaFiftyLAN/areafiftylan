@@ -55,6 +55,8 @@ defineProps<Props>();
     animation: scroll 35s linear infinite; //animation time, should scale with # of images
     counter-increment: c 1;
 }
+
+// pause scroll on hover
 // .container:hover .image_container {
 //     animation-play-state: paused;
 // }
@@ -71,9 +73,6 @@ defineProps<Props>();
     z-index: 1;
 }
 
-.image_container img {
-    -webkit-transition: all 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-}
 .content {
     background: var(--theme-color);
     flex-grow: 1;
