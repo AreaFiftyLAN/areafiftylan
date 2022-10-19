@@ -12,12 +12,13 @@
                 have any questions or are interested in sponsoring the event,
                 please send an email with our contact form.
                 <br /><br />
-                Logi is de beste positie.
+                Logi is the best position by the way.
             </p>
         </TextImage>
         <SponsorBanner :sponsors="sponsors">
             <p>PLACEHOLDER</p>
         </SponsorBanner>
+        <ImageScroll title="Oud LAN" :images="images"></ImageScroll>
     </div>
 </template>
 
@@ -32,4 +33,6 @@ const sponsors = [
         sponsors: ["/Images/chlogo.png", "/Images/chlogo.png"],
     },
 ];
+
+const images = ["/Images/lan1.jpg", "/Images/lan2.jpg", "/Images/lan3.jpg"];
 </script>

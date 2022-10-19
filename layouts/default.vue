@@ -23,7 +23,7 @@
     --font-size-m: 1.6rem;
     --font-size-l: 2rem;
     --font-size-xl: 3.2rem;
-    --font-size-xxl: 4.0rem;
+    --font-size-xxl: 4rem;
 
     --line-height-s: 1.8rem;
     --line-height-m: 2rem;
