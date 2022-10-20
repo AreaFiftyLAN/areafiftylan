@@ -1,11 +1,16 @@
 import { PrismaClient, User } from "@prisma/client";
-import { object, string, define, assert, size, StructError } from "superstruct";
-
-import isEmail from "is-email";
+import {
+    object,
+    string,
+    pattern,
+    assert,
+    size,
+    StructError,
+} from "superstruct";
 
 const Body = object({
     username: size(string(), 5, 60),
-    email: size(define("Email", isEmail), 4, 100),
+    email: size(pattern(string(), /^[^@]+@[^@]+\.[^@]+$/), 4, 100),
     firstName: size(string(), 3, 50),
     lastName: size(string(), 3, 50),
 });
