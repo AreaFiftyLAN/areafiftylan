@@ -8,5 +8,8 @@ indent_style = space
 indent_size = 4
 charset = utf-8
 
+[*/prisma/migrations/*]
+generated_code = true
+
 [*.{yml,yaml}]
 indent_size = 2
