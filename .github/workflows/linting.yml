@@ -48,6 +48,19 @@ jobs:
           JAVASCRIPT_ES_CONFIG_FILE: .eslintrc.json
           TYPESCRIPT_DEFAULT_STYLE: prettier
           TYPESCRIPT_ES_CONFIG_FILE: .eslintrc.json
+          VALIDATE_ENV: false
+          VALIDATE_SQL: false
+          VALIDATE_SQLFLUFF: false
+          VALIDATE_JAVA: false
+          VALIDATE_KOTLIN: false
+          VALIDATE_KOTLIN_ANDROID: false
+          VALIDATE_LATEX: false
+          VALIDATE_PHP: false
+          VALIDATE_POWERSHELL: false
+          VALIDATE_PROTOBUF: false
+          VALIDATE_PYTHON: false
+          VALIDATE_R: false
+          VALIDATE_XML: false
   prettier:
     name: Validate Prettier
     runs-on: ubuntu-latest
