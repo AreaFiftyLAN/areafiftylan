@@ -1,6 +1,7 @@
-import { PrismaClient, User } from "@prisma/client";
+import { User } from "@prisma/client";
+
+import { user } from "~~/logic";
 
 export default defineEventHandler<User[]>(async () => {
-    const prisma = new PrismaClient();
-    return await prisma.user.findMany();
+    return await user.getAll();
 });

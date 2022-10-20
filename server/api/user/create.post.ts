@@ -1,12 +1,7 @@
-import { PrismaClient, User } from "@prisma/client";
-import {
-    object,
-    string,
-    pattern,
-    assert,
-    size,
-    StructError,
-} from "superstruct";
+import { User } from "@prisma/client";
+import { object, string, pattern, assert, size } from "superstruct";
+
+import { user, makeError } from "~~/logic";
 
 const Body = object({
     username: size(string(), 5, 60),
@@ -21,19 +16,8 @@ export default defineEventHandler<User>(async (e) => {
     try {
         assert(body, Body);
     } catch (e) {
-        throw createError({
-            statusCode: 400,
-            statusMessage: "Bad Request",
-            message: (e as StructError)?.message,
-            cause: e,
-            fatal: false,
-            stack: undefined,
-        });
+        throw makeError(400, e);
     }
 
-    const prisma = new PrismaClient();
-
-    return await prisma.user.create({
-        data: body,
-    });
+    return await user.create(body);
 });
