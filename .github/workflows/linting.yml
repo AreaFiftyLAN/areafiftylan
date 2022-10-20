@@ -71,4 +71,5 @@ jobs:
         with:
           node-version: 18
       - run: yarn install
+      - run: yarn build
       - run: yarn lint
