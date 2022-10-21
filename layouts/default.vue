@@ -1,8 +1,8 @@
 <template>
     <div>
-        <TheHeader></TheHeader>
+        <TheHeader />
         <slot />
-        <TheFooter></TheFooter>
+        <TheFooter />
     </div>
 </template>
 
@@ -46,14 +46,12 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-a,
-a:hover,
-a:focus,
-a:active {
+a {
     text-decoration: none;
     color: inherit;
 }
 
+h1,
 h2 {
     color: var(--theme-color-alt);
     font-size: var(--font-size-xl);
