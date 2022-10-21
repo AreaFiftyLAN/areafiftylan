@@ -1,4 +1,4 @@
-import { user } from "~~/logic";
+import { user } from "../logic";
 
 user.create({
     email: "user@areafiftylan.nl",

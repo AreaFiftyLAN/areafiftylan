@@ -15,7 +15,7 @@ The dependencies are:
 -   [Docker](https://www.docker.com/).
 -   [Docker Compose](https://docs.docker.com/compose/).
 
-It's advised to develop using a UNIX based operating system (Linux or MacOS mostly), as Windows can sometimes give weird issues.
+It's advised to develop using a UNIX based operating system (Linux or macOS mostly), as Windows can sometimes give weird issues.
 You are welcome to still use Windows, but know that only limited support can be given.
 
 ### Starting Up

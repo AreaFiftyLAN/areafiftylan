@@ -4,6 +4,7 @@
     "description": "Hulde voor de LANDev",
     "repository": "git@github.com:AreaFiftyLAN/areafiftylan.git",
     "author": "LANDev <lancie@ch.tudelft.nl>",
+    "type": "module",
     "private": true,
     "scripts": {
         "dev": "nuxt dev --no-clear",
@@ -13,10 +14,11 @@
         "lint": "eslint . --ext .ts,.js,.vue,.json --max-warnings 0",
         "migrate": "prisma migrate deploy",
         "migrate-dev": "prisma migrate dev",
-        "migrate-reset": "prisma migrate reset"
+        "migrate-reset": "prisma migrate reset",
+        "postinstall": "nuxt prepare"
     },
     "prisma": {
-        "seed": "ts-node prisma/seeding.ts"
+        "seed": "ts-node --files --experimental-specifier-resolution=node --esm prisma/seeding.ts"
     },
     "devDependencies": {
         "@nuxt/image-edge": "^1.0.0-27719579.87dcdf2",
