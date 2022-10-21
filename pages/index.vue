@@ -24,32 +24,20 @@
         <SponsorBanner :sponsors="sponsors"></SponsorBanner>
         <TextImage image="/images/gamers.jpg" :inverse="false">
             <h2>FAQ</h2>
-            <QuestionAnswer question="When will the event take place?"
-                >The event will take place from Friday the 27th of May till
-                Sunday the 29th of May. Further details will be made available
-                at a later date.</QuestionAnswer
-            >
-            <QuestionAnswer question="When will the linter shut up?"
-                >It will shut up when I remove this lorum ipsum
-                stuff</QuestionAnswer
-            >
-            <QuestionAnswer question="When will Dany be happy?"
-                >Dany is always busy so I dont know if he will be
-                happy</QuestionAnswer
-            >
-            <QuestionAnswer question="When will Marit go crazy?"
-                >When this linter will not shut up, also I am conviced she
-                already is.</QuestionAnswer
-            >
             <QuestionAnswer
-                question="When will Marit stop making spelling mistakes?"
-                >Never.</QuestionAnswer
+                v-for="question in questions"
+                :key="question.question"
+                :question="question.question"
             >
+                {{ question.answer }}
+            </QuestionAnswer>
         </TextImage>
     </div>
 </template>
 
 <script setup lang="ts">
+const { data: questions } = await useFetch("/api/questions");
+
 const sponsors = [
     {
         title: "Presented by",
@@ -60,6 +48,7 @@ const sponsors = [
         sponsors: ["/images/chlogo.png", "/images/chlogo.png"],
     },
 ];
+
 const games = [
     {
         gameImage: "/images/minecraft.jpg",
