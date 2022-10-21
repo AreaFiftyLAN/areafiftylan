@@ -42,7 +42,8 @@ yarn install
 ```
 
 The database has to be set up separately.
-Fortunally it's also very simple:
+Fortunally it's also very simple, as it's just one command.
+This also seeds the database for you with some sample data found in `prisma/seeding.ts`.
 
 ```bash
 yarn migrate-dev
