@@ -1,6 +1,8 @@
 <template>
     <div>
-        <h2 class="image_scroller_title">{{ title }}</h2>
+        <span>
+            <h2 class="image_scroller_title">{{ title }}</h2>
+        </span>
         <div class="container">
             <div v-for="i in images" :key="i" class="image_container">
                 <NuxtImg :src="i" />
@@ -11,7 +13,6 @@
             <div class="image_container">
                 <NuxtImg :src="images[1]" />
             </div>
-            <input id="count" type="number" :value="images.length" />
         </div>
     </div>
 </template>
@@ -26,11 +27,7 @@ defineProps<Props>();
 </script>
 
 <style lang="scss" scoped>
-:root {
-    --end-translate: 0;
-}
-
-//how much scroll, should scale with # of images, 100% is width of 1 image
+//how much scroll should scale with # of images, 100% is width of 1 image
 @keyframes scroll {
     0% {
         transform: translateX(0);
@@ -39,41 +36,46 @@ defineProps<Props>();
         transform: translateX(-300%);
     }
 }
-
-.container {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    overflow-x: auto;
-    counter-reset: c 0;
-    height: 80%;
-    z-index: 2;
-}
-.container .image_container {
-    animation: scroll 35s linear infinite; //animation time, should scale with # of images
-    counter-increment: c 1;
-}
-
 // pause scroll on hover
 // .container:hover .image_container {
 //     animation-play-state: paused;
 // }
+.container {
+    display: flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: left;
+    overflow-x: hidden;
+    z-index: 2;
+}
+.container .image_container {
+    width: 100%;
+    animation: scroll 35s linear infinite; //animation time, should scale with # of images
+}
 
-::-webkit-scrollbar {
-    height: 0;
+img {
+    height: 800px;
+    max-height: 85vh;
 }
 
 .image_scroller_title {
-    display: flex;
+    display: block;
     position: absolute;
-    padding-top: var(--indent-m);
-    margin-left: 50%;
+    background-color: rgba(#1a2b43, var(--alpha));
     z-index: 1;
+
+    text-align: center;
+    width: 100%;
+    padding-top: var(--indent-s);
+    padding-bottom: var(--indent-s);
+    // margin-top: var(--indent-m);
+    // margin-left: 45%;
+    // padding: 0 var(--indent-s) 0 var(--indent-s);
+    // border-radius: 0.5rem;
 }
 
 .content {
     background: var(--theme-color);
     flex-grow: 1;
-    padding: var(--indent-xl);
 }
 </style>

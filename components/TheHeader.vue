@@ -1,11 +1,9 @@
 <template>
     <nav class="header" :class="{ sticky: y > 0 }">
-        <a class="header__link" href="/">
-            <NuxtImg class="header__img" src="/images/logo.png" />
-        </a>
+        <NuxtLink to="/"> <NuxtImg src="/images/logo.png" /> </NuxtLink>
         <div class="header__link">
             <a class="header__link" href="#">Tickets</a>
-            <a class="header__link" href="/aboutus">About us</a>
+            <a class="header__link" href="/about">About us</a>
             <a class="header__link" href="#">My Area</a>
         </div>
     </nav>

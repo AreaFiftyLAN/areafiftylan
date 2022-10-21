@@ -13,6 +13,7 @@
     --theme-color: #1a2b43;
     --theme-color-alt: #ffe574;
     --color-white: #fff;
+    --alpha: 0.5;
 
     --indent-s: 8px;
     --indent-m: 16px;

@@ -11,8 +11,6 @@
                 feedback and fun ideas. We hope to see you at the event! If you
                 have any questions or are interested in sponsoring the event,
                 please send an email with our contact form.
-                <br /><br />
-                Logi is the best position by the way.
             </p>
         </TextImage>
         <SponsorBanner :sponsors="sponsors">
