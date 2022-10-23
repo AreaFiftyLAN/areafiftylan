@@ -43,19 +43,23 @@ defineProps<Props>();
 .container {
     display: flex;
     height: 100%;
+    width: auto;
     flex-direction: row;
     justify-content: left;
     overflow-x: hidden;
     z-index: 2;
 }
 .container .image_container {
-    width: 100%;
+    width: 800px;
+    height: auto;
     animation: scroll 35s linear infinite; //animation time, should scale with # of images
 }
 
 img {
     height: 800px;
     max-height: 85vh;
+    min-height: 400px;
+    width: auto;
 }
 
 .image_scroller_title {
