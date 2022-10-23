@@ -50,7 +50,7 @@ defineProps<Props>();
     z-index: 2;
 }
 .container .image_container {
-    width: 800px;
+    width: 1200px;
     height: auto;
     animation: scroll 35s linear infinite; //animation time, should scale with # of images
 }
