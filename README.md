@@ -4,34 +4,69 @@ This site is still under construction. This is not in use yet :(.
 
 ## Development
 
-Development is done with Docker, with the settings provided.
-To run all needed components, a compose file is provided.
-Note: the force recreate option is required as there is currently a [known issue](https://github.com/nuxt/framework/issues/3998) with Nuxt in Docker.
-This can be run with:
+### Dependencies
+
+To start development, you need some dependencies to get it all up and running.
+Most actual dependencies are run with Docker, so it should be fairly simple to run.
+The dependencies are:
+
+-   [NodeJS](https://nodejs.org/) (recent version, 18.x+).
+-   [Yarn 1.x](https://yarnpkg.com/) (higher is untested, but might work).
+-   [Docker](https://www.docker.com/).
+-   [Docker Compose](https://docs.docker.com/compose/).
+
+It's advised to develop using a UNIX based operating system (Linux or macOS mostly), as Windows can sometimes give weird issues.
+You are welcome to still use Windows, but know that only limited support can be given.
+
+### Starting Up
+
+Development is done locally, with the services it depends on running with Docker.
+To start the dependencies, a Docker compose file is provided.
+This can be start with:
 
 ```bash
-docker-compose up --force-recreate
+docker-compose up
 ```
 
 This exposes several services:
 
--   The application itself at [localhost:3000](http://localhost:3000).
 -   The Postgres database to connect to, accesible at the default port `5432`.
 -   An Adminer instance, to explore the database, accesible at [localhost:8080](http://localhost:8080).
 -   Mailcatcher SMTP server, at port 1025.
 -   Mailcatcher to view the outgoing email at [localhost:8081](http://localhost:8081).
 
-For installing the dependencies run:
+Now to start the actual application, install the dependencies first:
 
 ```bash
-yarn
+yarn install
 ```
 
-For starting the server run:
+The database has to be set up separately.
+Fortunally it's also very simple, as it's just one command.
+This also seeds the database for you with some sample data found in `prisma/seeding.ts`.
+
+```bash
+yarn migrate-dev
+```
+
+Now you can start the server and visit it on [localhost:3000](http://localhost:3000):
 
 ```bash
 yarn dev
 ```
+
+### Resetting
+
+It's possible that the database enters an invalid state because of an programming error.
+You can either fix this manual at the [database interface](http://localhost:8080), but it's easier to just reset.
+
+This can be done by stopping the development server, running the following command, and start the server again:
+
+```bash
+yarn migrate-reset
+```
+
+You should now be able to start the server again with a fresh database.
 
 ## Design
 
