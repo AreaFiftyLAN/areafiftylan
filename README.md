@@ -11,7 +11,7 @@ Most actual dependencies are run with Docker, so it should be fairly simple to r
 The dependencies are:
 
 -   [NodeJS](https://nodejs.org/) (recent version, 18.x+).
--   [Yarn 1.x](https://yarnpkg.com/) (higher is untested, but might work).
+-   [Yarn 1.x](https://yarnpkg.com/) (higher is tested and works, but 1.x is recommended)..
 -   [Docker](https://www.docker.com/).
 -   [Docker Compose](https://docs.docker.com/compose/).
 
@@ -42,11 +42,16 @@ yarn install
 ```
 
 The database has to be set up separately.
-Fortunally it's also very simple, as it's just one command.
-This also seeds the database for you with some sample data found in `prisma/seeding.ts`.
+Fortunally it's also very simple, to create the structure you can run the following command:
 
 ```bash
 yarn migrate-dev
+```
+
+Now to seed the database with some sample data found in `server/prisma/seed`, you can run the following command.
+
+```bash
+yarn seed
 ```
 
 Now you can start the server and visit it on [localhost:3000](http://localhost:3000):
@@ -67,6 +72,7 @@ yarn migrate-reset
 ```
 
 You should now be able to start the server again with a fresh database.
+The seeding script is also run for you.
 
 ## Design
 

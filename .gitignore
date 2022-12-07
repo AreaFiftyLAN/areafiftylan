@@ -4,9 +4,8 @@ node_modules
 .nitro
 .cache
 .output
-.env.local
 dist
 yarn.lock
-dockerdata
-
 .DS_Store
+.pnp.*
+.yarn

@@ -1,9 +1,7 @@
 <template>
-    <div>
-        <TheHeader />
-        <slot />
-        <TheFooter />
-    </div>
+    <TheHeader />
+    <slot />
+    <TheFooter />
 </template>
 
 <style lang="scss">

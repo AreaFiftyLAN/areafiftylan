@@ -1,7 +1,5 @@
-import { User } from "@prisma/client";
+import { user } from "~~/server/logic";
 
-import { user } from "~~/logic";
-
-export default defineEventHandler<User[]>(async () => {
+export default defineEventHandler(async () => {
     return await user.getAll();
 });

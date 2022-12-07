@@ -1,0 +1,14 @@
+[
+    {
+        "email": "user@areafiftylan.nl",
+        "username": "user",
+        "firstName": "Basic",
+        "lastName": "User"
+    },
+    {
+        "email": "admin@areafiftylan.nl",
+        "username": "admin",
+        "firstName": "Admin",
+        "lastName": "User"
+    }
+]

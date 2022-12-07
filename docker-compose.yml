@@ -3,19 +3,13 @@ version: "3"
 
 services:
   database:
-    container_name: lan-database
     image: "postgres:latest"
     restart: unless-stopped
     ports:
       - 5432:5432
-    volumes:
-      - ./dockerdata/postgres:/data/postgres
-    environment:
-      PGDATA: "/data/postgres"
     env_file:
       - .env
   mailcatcher:
-    container_name: lan-mailcatcher
     image: schickling/mailcatcher
     restart: unless-stopped
     ports:
@@ -24,7 +18,6 @@ services:
     env_file:
       - .env
   adminer:
-    container_name: lan-adminer
     image: adminer
     restart: unless-stopped
     depends_on:
