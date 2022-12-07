@@ -18,7 +18,6 @@ export default defineNuxtConfig({
                 },
                 { name: "theme-color", content: "#1a2b43" },
             ],
-            link: [{ rel: "icon", href: "/invader.png" }],
         },
     },
 });
