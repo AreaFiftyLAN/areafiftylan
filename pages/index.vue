@@ -62,10 +62,19 @@ const sponsors = [
 ];
 const games = [
     {
-        gameImage: "/images/minecraft.jpg",
-        game: "Minecraft",
+        image: "/images/minecraft.jpg",
+        name: "Minecraft",
+        tournament: true,
         form: "3V3",
-        logo: "/images/logo.png",
+        logo: "/images/chlogo.png",
+        prize: "goodie bag",
+    },
+    {
+        image: "/images/minecraft.jpg",
+        name: "CSGO",
+        tournament: true,
+        form: "5v5",
+        logo: "/images/chlogo.png",
         prize: "goodie bag",
     },
 ];
