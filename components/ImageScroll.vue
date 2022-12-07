@@ -1,8 +1,6 @@
 <template>
     <div>
-        <span>
-            <h2 class="image_scroller_title">{{ title }}</h2>
-        </span>
+        <h2 class="image_scroller_title">{{ title }}</h2>
         <div class="container">
             <div v-for="i in images" :key="i" class="image_container">
                 <NuxtImg :src="i" />
@@ -45,6 +43,7 @@ defineProps<Props>();
     height: 100%;
     width: auto;
     flex-direction: row;
+    padding-bottom: var(--indent-xl);
     justify-content: left;
     overflow-x: hidden;
     z-index: 2;
@@ -64,18 +63,9 @@ img {
 
 .image_scroller_title {
     display: block;
-    position: absolute;
-    background-color: rgba(#1a2b43, var(--alpha));
-    z-index: 1;
-
+    margin-bottom: var(--indent-s);
     text-align: center;
-    width: 100%;
-    padding-top: var(--indent-s);
-    padding-bottom: var(--indent-s);
-    // margin-top: var(--indent-m);
-    // margin-left: 45%;
-    // padding: 0 var(--indent-s) 0 var(--indent-s);
-    // border-radius: 0.5rem;
+    margin-top: var(--indent-s);
 }
 
 .content {
