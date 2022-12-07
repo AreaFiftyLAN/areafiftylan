@@ -34,6 +34,8 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: var(--color-white);
+    position: relative;
+    z-index: 5;
 
     p {
         color: black;

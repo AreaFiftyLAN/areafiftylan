@@ -32,6 +32,11 @@ img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
+    min-height: 450px;
+
+    @media (max-width:425px) {
+        max-height: 175px;
+    }
 }
 
 .content {
@@ -43,10 +48,21 @@ img {
     background-color: rgba($color: #ffff, $alpha: 0.5);
     padding-left: 5%;
     padding-top: 10%;
+    z-index: 4;
+    min-height: 450px;
+
+    @media (max-width:425px) {
+        width: 100vw;
+        padding-top: 20%;
+        max-height: 175px;
+    }
 }
 
 .content h1 {
     font-size: var(--font-size-xl);
+    @media (max-width:425px) {
+        text-align: center;
+    }
 }
 
 .content input {
@@ -57,6 +73,7 @@ img {
     position: relative;
     text-align: left;
     color: white;
+    min-height: 450px;
 }
 
 a {
@@ -66,12 +83,21 @@ a {
     &:hover {
         color: var(--theme-color);
     }
+
+    @media (max-width:425px) {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .buttons {
     display: flex;
     margin: 1rem 0;
     align-items: center;
+
+    @media (max-width:425px) {
+        justify-content: center;
+    }
 }
 
 .button {
@@ -114,5 +140,9 @@ input{
     border: none;
     outline: none;
     border-radius: 5px;
+
+    @media (max-width:425px) {
+        margin: 20px auto;
+    }
 }
 </style>
