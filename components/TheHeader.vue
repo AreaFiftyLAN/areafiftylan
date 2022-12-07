@@ -14,22 +14,24 @@ const { y } = useWindowScroll();
 </script>
 
 <style lang="scss" scoped>
-img {
-    z-index: 2;
-    height: 40px;
-    padding: 0 var(--indent-s);
-}
-
 nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: var(--theme-color-alt);
     padding: var(--indent-m) 0;
-    z-index: 2;
-    position: absolute;
-    width: 100%;
     transition: background-color 0.5s;
+}
+
+img {
+    z-index: 2;
+    height: 40px;
+    padding: 0 var(--indent-s);
 }
 
 a {
@@ -42,9 +44,7 @@ a {
     }
 }
 
-.sticky {
+.scrolled {
     background-color: var(--theme-color);
-    position: sticky;
-    top: 0;
 }
 </style>
