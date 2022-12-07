@@ -5,13 +5,27 @@
             <h1>{{ type }}</h1>
             <input type="text" placeholder="E-mail" />
             <input type="password" placeholder="Password" />
-            <input type="password" placeholder="Password Repeat" v-if="(type === 'Signup')"/><br />
-            <NuxtLink href="https://google.com" v-if="(type === 'Login')">Reset Password</NuxtLink>
-            <NuxtLink href="/login" v-if="(type === 'Signup')">Already have an account? Login here.</NuxtLink>
+            <input
+                v-if="type === 'Signup'"
+                type="password"
+                placeholder="Password Repeat"
+            /><br />
+            <NuxtLink v-if="type === 'Login'" href="https://google.com"
+                >Reset Password</NuxtLink
+            >
+            <NuxtLink v-if="type === 'Signup'" href="/login"
+                >Already have an account? Login here.</NuxtLink
+            >
             <div class="buttons">
-                <Button class="button" href="/login" v-if="(type === 'Login')">Login</Button>
-                <Button class="button" href="/signup" v-if="(type === 'Signup')">Register</Button>
-                <NuxtLink class="button" href="/signup" v-if="(type === 'Login')">Register</NuxtLink>
+                <Button v-if="type === 'Login'" class="button" href="/login"
+                    >Login</Button
+                >
+                <Button v-if="type === 'Signup'" class="button" href="/signup"
+                    >Register</Button
+                >
+                <NuxtLink v-if="type === 'Login'" class="button" href="/signup"
+                    >Register</NuxtLink
+                >
             </div>
         </div>
     </div>
@@ -24,8 +38,6 @@ interface Props {
 }
 
 defineProps<Props>();
-
-
 </script>
 <style lang="scss" scoped>
 img {
@@ -34,7 +46,7 @@ img {
     object-fit: cover;
     min-height: 450px;
 
-    @media (max-width:425px) {
+    @media (max-width: 425px) {
         max-height: 175px;
     }
 }
@@ -51,7 +63,7 @@ img {
     z-index: 4;
     min-height: 450px;
 
-    @media (max-width:425px) {
+    @media (max-width: 425px) {
         width: 100vw;
         padding-top: 20%;
         max-height: 175px;
@@ -60,7 +72,7 @@ img {
 
 .content h1 {
     font-size: var(--font-size-xl);
-    @media (max-width:425px) {
+    @media (max-width: 425px) {
         text-align: center;
     }
 }
@@ -84,7 +96,7 @@ a {
         color: var(--theme-color);
     }
 
-    @media (max-width:425px) {
+    @media (max-width: 425px) {
         display: flex;
         justify-content: center;
     }
@@ -95,7 +107,7 @@ a {
     margin: 1rem 0;
     align-items: center;
 
-    @media (max-width:425px) {
+    @media (max-width: 425px) {
         justify-content: center;
     }
 }
@@ -108,13 +120,12 @@ a {
     outline: none;
     border: none;
     border-radius: 5px;
-    transition: .2s ease-in;
+    transition: 0.2s ease-in;
     cursor: pointer;
     text-decoration: none;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
     &:nth-child(even) {
         background-color: var(--theme-color);
@@ -129,7 +140,7 @@ a {
     }
 }
 
-input{
+input {
     width: 60%;
     height: 20px;
     background: #e0dede;
@@ -141,7 +152,7 @@ input{
     outline: none;
     border-radius: 5px;
 
-    @media (max-width:425px) {
+    @media (max-width: 425px) {
         margin: 20px auto;
     }
 }
