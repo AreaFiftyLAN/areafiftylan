@@ -6,7 +6,7 @@
                 <NuxtLink href="/admin/home">My Admin</NuxtLink>
                 <NuxtLink href="/admin/users">Users</NuxtLink>
             </div>
-            <NuxtChild />
+            <NuxtPage />
         </div>
     </main>
 </template>
