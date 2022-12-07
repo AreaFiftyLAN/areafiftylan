@@ -31,7 +31,7 @@ defineProps<Props>();
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-300%);
+        transform: translateX(calc(-100% * 3));
     }
 }
 // pause scroll on hover
@@ -40,7 +40,7 @@ defineProps<Props>();
 // }
 .container {
     display: flex;
-    height: 100%;
+    height: 80%;
     width: auto;
     flex-direction: row;
     padding-bottom: var(--indent-xl);
@@ -49,9 +49,9 @@ defineProps<Props>();
     z-index: 2;
 }
 .container .image_container {
+    animation: scroll 35s linear infinite; //animation time, should scale with # of images
     width: 1200px;
     height: auto;
-    animation: scroll 35s linear infinite; //animation time, should scale with # of images
 }
 
 img {

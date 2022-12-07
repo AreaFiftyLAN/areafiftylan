@@ -1,10 +1,10 @@
 <template>
-    <nav class="header" :class="{ sticky: y > 0 }">
-        <NuxtLink to="/"> <NuxtImg src="/images/logo.png" /> </NuxtLink>
-        <div class="header__link">
-            <a class="header__link" href="#">Tickets</a>
-            <a class="header__link" href="/about">About us</a>
-            <a class="header__link" href="#">My Area</a>
+    <nav :class="{ scrolled: y > 0 }">
+        <NuxtLink href="/"><NuxtImg src="/images/logo.png" /></NuxtLink>
+        <div>
+            <a href="#">Tickets</a>
+            <a href="/about">About us</a>
+            <a href="#">My Area</a>
         </div>
     </nav>
 </template>
