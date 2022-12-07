@@ -25,6 +25,7 @@
         "@nuxtjs/eslint-config-typescript": "^11.0.0",
         "@prisma/client": "^4.6.1",
         "@types/node": "18.11.9",
+        "@types/validator": "^13.7.10",
         "@typescript-eslint/eslint-plugin": "^5.38.1",
         "@typescript-eslint/parser": "^5.38.1",
         "@vueuse/core": "^9.3.0",
@@ -42,6 +43,7 @@
         "vue-eslint-parser": "^9.1.0"
     },
     "dependencies": {
-        "superstruct": "^1.0.3"
+        "superstruct": "^1.0.3",
+        "validator": "^13.7.0"
     }
 }

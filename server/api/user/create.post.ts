@@ -1,23 +1,9 @@
-import { User } from "@prisma/client";
-import { object, string, pattern, assert, size } from "superstruct";
+import { user } from "~~/server/logic";
+import { readValidatedBody } from "~~/server/utils";
+import { UserCreateValidator } from "~~/server/validation";
 
-import { user, makeError } from "~~/logic";
+export default defineEventHandler(async (e) => {
+    const input = await readValidatedBody(e, UserCreateValidator);
 
-const Body = object({
-    username: size(string(), 5, 60),
-    email: size(pattern(string(), /^[^@]+@[^@]+\.[^@]+$/), 4, 100),
-    firstName: size(string(), 3, 50),
-    lastName: size(string(), 3, 50),
-});
-
-export default defineEventHandler<User>(async (e) => {
-    const body = await readBody(e);
-
-    try {
-        assert(body, Body);
-    } catch (e) {
-        throw makeError(400, e);
-    }
-
-    return await user.create(body);
+    return await user.create(input);
 });
