@@ -1,8 +1,8 @@
 <template>
-    <div class="login">
+    <div class="signin">
         <TextImageTransparent
             image="/images/gamers.jpg"
-            type="Login"
+            type="Signup"
         ></TextImageTransparent>
     </div>
 </template>
