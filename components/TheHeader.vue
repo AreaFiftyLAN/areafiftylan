@@ -3,7 +3,7 @@
         <NuxtLink href="/"><NuxtImg src="/images/logo.png" /></NuxtLink>
         <div>
             <a href="#">Tickets</a>
-            <a href="#">About us</a>
+            <a href="/about">About us</a>
             <a href="#">My Area</a>
         </div>
     </nav>
