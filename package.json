@@ -28,7 +28,7 @@
         "@types/validator": "^13.7.10",
         "@typescript-eslint/eslint-plugin": "^5.45.1",
         "@typescript-eslint/parser": "^5.45.1",
-        "@vueuse/core": "^9.6.0",
+        "@vueuse/core": "^10.1.0",
         "@vueuse/nuxt": "^9.6.0",
         "eslint": "^8.26.0",
         "eslint-config-prettier": "^8.5.0",
